@@ -1,0 +1,60 @@
+.term-calendar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.term-calendar div {
+  background: var(--card);
+  padding: 20px clamp(20px, 3vw, 48px);
+}
+
+.term-calendar small,
+.term-calendar b { display: block; }
+
+.term-calendar small {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.term-calendar b {
+  margin-top: 4px;
+  font: 600 16px/1.25 Georgia, serif;
+}
+
+.class-card time {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--cycle);
+  font-size: 10px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: .9px;
+}
+
+.assessment-meter { --portion: 15%; }
+
+/* Keep the three stages visually identical; content length must not resize one card. */
+@media (min-width: 1001px) {
+  .rhythm { align-items: stretch; }
+  .rhythm article {
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.assessment-meter { --portion: 15%; }
+
+@media (max-width: 800px) {
+  .term-calendar { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .term-calendar { grid-template-columns: 1fr; }
+}

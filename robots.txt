@@ -1,0 +1,3 @@
+# TEMPORARY, with the pre-launch curtain. Delete this file at launch.
+User-agent: *
+Disallow: /

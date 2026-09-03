@@ -1,0 +1,97 @@
+(function () {
+  "use strict";
+  window.BUSI4607 = {
+    modules: [
+      {
+        key: "dynamics", number: 1, name: "Dynamics of Technological Innovation", color: "#e91c24",
+        question: "Why do some innovations reshape an industry while others disappear—and when should a firm enter?",
+        business: "Read technological change before committing resources, architecture, or market timing.",
+        cases: ["Kodak and the Digital Revolution (A)", "Adobe Systems, Inc.", "Netflix"],
+        focus: "Types and patterns of innovation · dominant design · timing of entry",
+        evidence: "Industry trajectories, product architectures, installed bases, complementary goods, subscriber economics, and case exhibits.",
+        methods: ["Innovation Types", "Technology S-Curves", "Dominant Design", "Platform Competition", "Timing of Entry"],
+        make: "A diagnosis of what is changing, which capabilities it threatens or strengthens, and whether the firm should lead, follow, or wait.",
+        carry: "These tools establish the platform’s technological position and lifecycle—the first layer of the term-project diagnosis.",
+        verdict: "Technology does not dictate strategy; it changes the choices and timing available."
+      },
+      {
+        key: "strategy", number: 2, name: "Strategic Management of Technological Innovation", color: "#b8272f",
+        question: "Which capabilities should a technology firm build, protect, extend, or stop funding?",
+        business: "Set strategic direction and respond to rivals without mistaking imitation for advantage.",
+        cases: ["Google Inc.", "Matching Dell"],
+        focus: "Strategic intent · core competencies · activity systems · competitive response",
+        evidence: "Market structure, firm resources, unit economics, reinforcing activities, competitor responses, and the cost of imitation.",
+        methods: ["Strategic Direction", "Five Forces", "Core Competencies", "Dynamic Capabilities", "Strategic Intent", "Competitive Strategy"],
+        make: "A direction choice that names the capabilities on which it rests, the initiatives to fund or stop, and the rival response it anticipates.",
+        carry: "Students separate industry attractiveness from firm position and identify the capabilities their platform recommendation can credibly use.",
+        verdict: "A good opportunity is not a strategy until it fits what the firm can do distinctively."
+      },
+      {
+        key: "value", number: 3, name: "Special Topics in Management of Innovation", color: "#4f5964",
+        question: "How can an innovation create value for customers and still let the innovator capture enough of it?",
+        business: "Design services, platforms, and complementary assets that turn technological capability into durable performance.",
+        cases: ["Innovation at Progressive (A): Pay-As-You-Go Insurance", "TopCoder (A): Developing Software through Crowdsourcing", "AI Wars in 2025"],
+        relatedSessions: ["Term Paper Clinic"],
+        focus: "Service innovation · business-model design · appropriability · complementary assets",
+        evidence: "Adoption barriers, participant incentives, revenue logic, platform governance, contribution per query, and sensitivity analysis.",
+        methods: ["Business Model Innovation", "Profiting from Technology", "Appropriability", "Service Innovation", "Complementary Assets"],
+        make: "A quantified value-capture argument that traces who gains, who loses, how the model changes, and what would falsify the recommendation.",
+        carry: "These tools complete the 10X consulting case: baseline, target, arithmetic, mechanism, second-order effects, and implementation.",
+        verdict: "Creating value and capturing value are separate design problems."
+      }
+    ],
+    rows: [
+      {key:"foundation", label:"Foundation", name:"Decision practice", range:"Class 1", color:"#191919"},
+      {key:"dynamics", label:"Module 1", name:"Dynamics of Technological Innovation", range:"Classes 2–4", color:"#e91c24"},
+      {key:"platform", label:"Platform Studio", name:"Know the product from inside", range:"Class 5", color:"#8b1e2d"},
+      {key:"strategy", label:"Module 2", name:"Strategic Management of Technological Innovation", range:"Classes 6–7", color:"#b8272f"},
+      {key:"value", label:"Module 3", name:"Special Topics in Management of Innovation", range:"Classes 8–9", color:"#4f5964"},
+      {key:"clinic", label:"Project Studio", name:"Term Paper Clinic", range:"Class 10", color:"#6c747d"},
+      {key:"synthesis", label:"Module 3 · continued", name:"Profiting From Technology", range:"Class 11", color:"#4f5964"},
+      {key:"final", label:"Final Studio", name:"Platform recommendations", range:"Classes 12–13", color:"#191919"}
+    ],
+    classes: [
+      {n:1, group:"foundation", type:"prepare", title:"Introduction + Learning with Cases", before:"Read the course outline and Schilling Chapter 1. Learning with Cases is optional preparation if case-based learning is new to you. Bring one technology decision that looked obvious in hindsight but was uncertain when it was made.", inside:"Establish the course decision discipline, case roles, random teams, platform assignments, submission system, and the difference between reporting facts and analyzing a decision.", after:"Complete the mandatory Case Analysis Coach, confirm Ares and Brightspace access, and begin learning your assigned platform."},
+      {n:2, group:"dynamics", type:"analyze", title:"Types and Patterns of Innovation · Kodak", before:"Read Schilling Chapter 3 and Kodak and the Digital Revolution. Classify the digital transition in more than one way and inspect the exhibits before taking a position.", inside:"Distinguish incremental, radical, component, architectural, competence-enhancing, and competence-destroying change; then decide how Kodak should respond.", after:"Add a technology-pattern diagnosis to your platform evidence file and note which incumbent capabilities are assets or liabilities."},
+      {n:3, group:"dynamics", type:"analyze", title:"Dominant Design · Adobe", before:"Read Schilling Chapter 4 and Adobe Systems, Inc. Identify what could become standardized in the emerging eBook system and who benefits from each candidate design.", inside:"Map increasing returns, installed base, complements, switching costs, and format control; then test Adobe’s options against Microsoft.", after:"Identify the dominant-design contest around your platform and the complements that could tip it."},
+      {n:4, group:"dynamics", type:"analyze", title:"Timing of Entry · Netflix", before:"Read Schilling Chapter 5 and Netflix. Use the exhibits to compare Netflix and Blockbuster in mail-based rental and video-on-demand.", inside:"Evaluate actual first-mover advantages, fast-follower costs, enabling conditions, and the timing and mode of entry into video-on-demand.", after:"Write a one-paragraph timing thesis for your platform and state the enabling condition on which it depends."},
+      {n:5, group:"platform", type:"studio", title:"Technology Platform Tutorials", before:"Submit team slides and a working video link in Brightspace by 11:59 p.m. on the presentation night. Rehearse a 20-minute demonstration and be ready for a 10-minute question period.", inside:"Eight teams demonstrate their platforms from the user and, where possible, supplier or creator side; explain value creation, revenue logic, competition, course frameworks, evidence gaps, and artificial-intelligence pressures.", after:"Freeze a dated platform baseline: business-model map, core measures, sources, disclosure gaps, and questions the tutorial revealed."},
+      {n:6, group:"strategy", type:"analyze", title:"Strategic Direction · Google", before:"Read Schilling Chapter 6 and Google Inc. Decide whether Google’s core competence is search, monetization, infrastructure, or something else—and follow that choice into strategy.", inside:"Test core competencies, external threats, stated intent, and adjacent initiatives; decide which directions should be funded and which should be cut.", after:"Define your platform company’s strategic intent and test its core competencies using value, imitability, and extensibility."},
+      {n:7, group:"strategy", type:"analyze", title:"Competitive Strategies · Matching Dell", before:"Read Matching Dell and The Imitator’s Dilemma. Compare what each rival copied, what it cost, and what result it produced.", inside:"Model Dell as a reinforcing activity system, distinguish copying practices from replicating advantage, and advise one rival on imitate, differentiate, or withdraw.", after:"Map your platform’s activity system and identify one element competitors can copy and one reinforcing relationship they cannot easily reproduce."},
+      {n:8, group:"value", type:"analyze", title:"Service Innovation · Progressive", before:"Read the Progressive case and Creating New Markets Through Service Innovation. Build the strongest go and no-go cases for national rollout.", inside:"Locate Autograph in the service-innovation framework, trace operational savings into customer value, assess adoption barriers, and decide whether and how to scale.", after:"Identify whether your platform proposal changes the core service, its delivery, the customer experience, or all three."},
+      {n:9, group:"value", type:"analyze", title:"Business Model Innovation · TopCoder", before:"Read TopCoder and Creating Value Through Business Model Innovation. Map content, structure, and governance before proposing growth.", inside:"Analyze both sides of the platform, participant incentives, design themes, scalability, governance, and the changes required for tenfold revenue.", after:"Complete the business-model map for your platform and name its dominant source of value: novelty, lock-in, complementarities, or efficiency."},
+      {n:10, group:"clinic", type:"studio", title:"Term Paper Clinic", before:"Bring your platform baseline, binding performance measure, comparable, three alternatives, draft arithmetic, and the assumption you trust least.", inside:"Stress-test each team’s 10X claim, mechanism, second-order effects, feasibility, primary-source evidence, sensitivity check, and implementation logic.", after:"Revise the proposal around the largest defensible performance improvement—not the largest unsupported number."},
+      {n:11, group:"synthesis", type:"analyze", title:"Profiting From Technology · AI Wars in 2025", before:"Read Schilling Chapter 9 and AI Wars in 2025. Use the unit-economics spreadsheet; write down every assumption before trusting the result.", inside:"Analyze appropriability, complementary assets, model-layer economics, search cannibalization, and the conditions under which a generative answer matches ad-supported search profitability.", after:"Audit where value is created and captured in your platform proposal, and identify the complementary asset the recommendation cannot work without."},
+      {n:12, group:"final", type:"defend", title:"Term Paper Presentations · First Four Teams", before:"All teams submit the paper and slides by the common deadline published in Brightspace. Presenting teams rehearse; every student prepares questions grounded in course theory and evidence.", inside:"Four teams defend a quantified platform recommendation, including the baseline, mechanism, assumptions, sensitivity, second-order effects, and implementation plan.", after:"Presenting teams record the strongest challenge; remaining teams use the discussion to sharpen delivery without changing the submitted paper."},
+      {n:13, group:"final", type:"defend", title:"Term Paper Presentations · Remaining Teams", before:"Arrive for the full class with presentation materials ready. The second presentation day is rehearsal time, not an extension of the common submission deadline.", inside:"The remaining teams defend their platform recommendations; the class compares how the same decision discipline travels across eight different platform businesses.", after:"Carry forward a reusable strategic method: diagnose change, work the evidence, choose among alternatives, quantify the case, and defend implementation."}
+    ],
+    assessments: [
+      {label:"In-Class Participation",weight:10,color:"#e91c24",detail:"Prepare every case, contribute evidence-based reasoning, and attend at least 11 of the 13 scheduled classes for full attendance credit. Attendance is recorded electronically using the method announced in Brightspace; bring a connected device for check-in.",strong:"Strong participation uses assigned theory and case evidence, advances the decision, and revises a position when the evidence warrants it."},
+      {label:"Technology Platform Tutorial",weight:5,color:"#8b1e2d",detail:"Your team submits slides and a share link, then gives a 20-minute platform demonstration followed by a 10-minute question period. This is Presentation #1 and builds the evidence base for the term paper.",strong:"Strong work demonstrates the product, maps its business and revenue logic, uses primary sources, identifies competition and artificial-intelligence pressures, and answers questions directly."},
+      {label:"Term-Paper Presentation",weight:5,color:"#8b1e2d",detail:"Your team presents its term-paper recommendation for 30 minutes and answers questions for 10 minutes. This is Presentation #2; slides and the written paper share the common deadline published in Brightspace.",strong:"Strong work makes the quantified argument easy to follow, selects evidence carefully, shares delivery coherently, and defends assumptions under questioning."},
+      {label:"Case Presentation",weight:20,color:"#b8272f",detail:"Your team delivers a 30-minute case analysis and leads a 30-minute discussion. One member submits the slides in Brightspace by 11:59 p.m. the day before class; the folder then closes and late slides receive zero.",strong:"Strong work ranks the decision, uses theory and exhibits, compares plausible alternatives, defends explicit criteria, and finishes with sequenced implementation."},
+      {label:"Case Report",weight:20,color:"#4f5964",detail:"Each reporting-team student independently submits a case analysis of no more than ten double-spaced pages, including a one-page reference list, and serves as a primary discussant in class.",strong:"Strong work shows causal reasoning rather than summary, uses quantitative exhibits, challenges the presenting team with evidence, and states what the case cannot establish."},
+      {label:"Written Term Paper",weight:40,color:"#191919",detail:"Your team writes a 10–15 page, single-spaced consulting piece, including references; exhibits, financial tables, and figures do not count toward the limit. Diagnose the platform, quantify a substantial performance gap, defend a change, and specify implementation.",strong:"Strong work shows a sourced baseline, target, arithmetic, assumptions, sensitivity test, causal mechanism, second-order effects, strategic fit, leading indicators, and abandonment conditions."}
+    ],
+    checklist: [
+      "I have read the official course outline and checked Brightspace for the current dates, room, and fixed deadlines.",
+      "I can open the course Brightspace page and reach the Ares reserves.",
+      "I have access to Schilling’s 7th edition and know which chapters are assigned.",
+      "I will complete the Case Analysis Coach before the first case session.",
+      "I can bring a connected device for attendance, case work, and platform demonstrations.",
+      "I understand that teams are assigned randomly in the first class and cannot be changed."
+    ],
+    faq: [
+      ["Is this a lecture course?","Not primarily. The instructor introduces and connects the frameworks, but the learning engine is case discussion. You are expected to arrive having read the material, inspected the exhibits, and formed a provisional decision."],
+      ["What is the difference between the presenting and reporting teams?","The presenting team builds and defends the case recommendation. Each member of the reporting team writes an independent report and the team becomes the primary discussant, testing the recommendation with evidence rather than summarizing it."],
+      ["What does 10X mean in the term paper?","It means a large, explicitly measured improvement—not making the company ten times larger. Name a reported measure, establish its current value and a defensible target, show the arithmetic and assumptions, and test the most consequential assumption. A rigorous smaller ceiling can earn full marks."],
+      ["Which platform will my team study?","Teams are randomly assigned in the first class. The current packages are Team 1—Shopify, Team 2—Roblox, Team 3—Reddit, Team 4—Duolingo, Team 5—Pinterest, Team 6—Uber, Team 7—Spotify, and Team 8—Unity."],
+      ["Can generative artificial intelligence help with coursework?","Yes, for permitted support such as brainstorming, background research, summarizing, editing, and language polishing. Disclose the tool and use, verify every claim and reference, and keep the substantive analysis and reasoning your own. The official outline governs."],
+      ["How will attendance be recorded?","Attendance is recorded electronically using the method announced in Brightspace. Bring a connected device and attend at least 11 of the 13 scheduled classes for full attendance credit."],
+      ["Where do I submit work?","All work goes through the appropriate Brightspace Assignments folder. Team deliverables use group submission; case reports are individual. Work emailed to the instructor is not marked."],
+      ["Where are dates, deadlines, and late rules?","Brightspace provides the current class dates, room, and fixed submission deadlines. The <a href=\"downloads/BUSI-4607-Course-Outline.pdf\" target=\"_blank\" rel=\"noopener\">official course outline (PDF) ↗</a> provides the course sequence, requirements, relative deadlines, late rules, and policies. The outline opens in a new tab so you can browse or download it."],
+      ["Is there a final examination?","No. The course culminates in the team term paper and presentation. The official outline includes the applicable eligibility and submission rules."],
+      ["Is this browser site the official course outline?","No. This site explains the course design and helps you navigate it. The official PDF governs requirements and policies; current Brightspace instructions govern dates, rooms, fixed deadlines, and operational delivery."]
+    ]
+  };
+})();
