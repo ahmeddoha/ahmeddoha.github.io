@@ -246,3 +246,70 @@
 @media (max-width: 350px) {
   .hero .hero-lead { min-height: 6lh; }
 }
+
+/* ── Narrow screens ─────────────────────────────────────────────────────────
+ * Loaded after development.css, so these win.
+ *
+ * 1. development.css sets `white-space: nowrap` on the title's parts, so a long
+ *    word can never wrap: on a narrow screen, or with the system font scaled
+ *    up, it runs past the edge and is clipped mid-word. Text that cannot
+ *    reflow leaves zooming out as the only escape.
+ * 2. Multi-column grids keep their columns below ~360px and push content past
+ *    the viewport. A page wider than the screen is what defeats pinch-zoom.
+ *
+ * No type scale is touched; the clamp() rules above still set size.
+ */
+@media (max-width: 760px) {
+  .hero .course-title > span,
+  .hero .course-title em,
+  .hero h1 > span,
+  .hero h1 em {
+    white-space: normal;
+  }
+
+  .hero .course-title,
+  .hero h1 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  img,
+  table,
+  pre,
+  iframe {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .independence,
+  .rhythm,
+  .class-grid,
+  .cycle-interface,
+  .cycle-panel,
+  .assessment-layout,
+  .start-layout,
+  .evidence-section,
+  .class-details,
+  .cycle-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .independence i,
+  .rhythm > i {
+    display: none;
+  }
+
+  .class-details section {
+    border-right: 0;
+    border-bottom: 1px solid var(--line, #e5e7eb);
+  }
+}
+
+@media (max-width: 380px) {
+  .class-card > button {
+    grid-template-columns: 38px 1fr 18px;
+    gap: 10px;
+    padding: 16px 12px;
+  }
+}
