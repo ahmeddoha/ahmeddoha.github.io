@@ -75,12 +75,12 @@ window.STUDENT_COURSE = {
     "I have Git available or know where I will obtain help setting it up.",
     "I can bring a laptop to every class.",
     "I understand that the course uses public research data and executable code.",
-    "I can access O’Reilly Learning through Carleton Library and have obtained the two purchase-designated methods texts.",
+    "I can access O’Reilly Learning through Carleton Library and have obtained the required copy of <i>Text as Data</i>.",
     "I have read the official course outline and recorded the Brightspace deadlines."
   ],
   faq: [
     ["Is this primarily a coding course?","No. Code is the medium through which evidence becomes inspectable. You are assessed on methodological reasoning, validity, interpretation, reconstruction discipline, and research design—not programming cleverness."],
-    ["Which methods books do I need to buy?","Purchase <i>Text as Data</i> by Grimmer, Roberts, and Stewart and <i>Network Analysis</i> by Rawlings and colleagues unless you already have lawful full-text library access. Carleton Library’s O’Reilly Learning database provides <i>Hands-On Large Language Models</i>, <i>AI Engineering</i>, <i>Graph Neural Networks in Action</i>, and Pinheiro’s <i>Network Science</i> at no additional cost. Jurafsky and Martin’s online manuscript and the Rawlings R companion are free."],
+    ["Which methods books do I need to buy?","<i>Text as Data</i> by Grimmer, Roberts, and Stewart is the only required student purchase. Carleton Library’s O’Reilly Learning database provides <i>Hands-On Large Language Models</i>, <i>AI Engineering</i>, <i>Graph Neural Networks in Action</i>, and Pinheiro’s <i>Network Science</i> at no additional cost. Jurafsky and Martin’s online manuscript and the Rawlings <i>Network Analysis with R</i> companion are free."],
     ["Do I need prior experience with embeddings, LLM experiments, or Graph Neural Networks?","No. Each cycle begins with a detailed methods class. You should, however, be able to follow Python, work with tabular data, and interpret basic empirical results."],
     ["What does “reconstruct a paper” mean?","You identify published claims, trace their data and computational dependencies, execute the deepest lawful evidence path available, compare recovered with reported results, diagnose discrepancies, and document the boundary of your verdict."],
     ["May I choose any paper for the student workshop?","No. Workshop papers come from a faculty-curated, cross-disciplinary reading pool whose public evidence path has been screened. This protects the quality and feasibility of the exercise."],
