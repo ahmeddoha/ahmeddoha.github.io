@@ -259,20 +259,28 @@
  *
  * No type scale is touched; the clamp() rules above still set size.
  */
+/* The title must be able to wrap at EVERY width, not just on phones.
+ * development.css sets `white-space: nowrap` on its lines, and the face is
+ * Georgia — present on Windows and macOS, absent on many Linux boxes, where a
+ * narrower serif is substituted. Measured on this title at 1366px: 653px of
+ * text in a 675px column with the substitute, but 801px in the same 675px
+ * column with real Georgia. A line that cannot wrap and does not fit has
+ * nowhere to go but out of the card, which is exactly what Windows showed.
+ * Wrapping costs nothing where the title already fits. */
+.hero .course-title > span,
+.hero .course-title em,
+.hero h1 > span,
+.hero h1 em {
+  white-space: normal;
+}
+
+.hero .course-title,
+.hero h1 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
 @media (max-width: 760px) {
-  .hero .course-title > span,
-  .hero .course-title em,
-  .hero h1 > span,
-  .hero h1 em {
-    white-space: normal;
-  }
-
-  .hero .course-title,
-  .hero h1 {
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-
   img,
   table,
   pre,

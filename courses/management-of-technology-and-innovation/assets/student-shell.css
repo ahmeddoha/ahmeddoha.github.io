@@ -280,36 +280,3 @@
     max-width: 100%;
   }
 }
-
-@media (max-width: 560px) {
-  .independence,
-  .rhythm,
-  .class-grid,
-  .cycle-interface,
-  .cycle-panel,
-  .assessment-layout,
-  .start-layout,
-  .evidence-section,
-  .class-details,
-  .cycle-tabs {
-    grid-template-columns: 1fr;
-  }
-
-  .independence i,
-  .rhythm > i {
-    display: none;
-  }
-
-  .class-details section {
-    border-right: 0;
-    border-bottom: 1px solid var(--line, #e5e7eb);
-  }
-}
-
-@media (max-width: 380px) {
-  .class-card > button {
-    grid-template-columns: 38px 1fr 18px;
-    gap: 10px;
-    padding: 16px 12px;
-  }
-}
