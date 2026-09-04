@@ -16,21 +16,21 @@ window.STUDENT_COURSE = {
       question: "When can biased synthetic choices add information without being mistaken for human responses?",
       business: "Conjoint market research and the cost of human data",
       paper: "Wang, Zhang & Zhang (2026)", title: "Large Language Models for Market Research", journal: "Marketing Science",
-      data: "Vaccine and sports-car studies · 50 trials per cell",
+      data: "Vaccine and sports-car conjoint studies",
       methods: ["Estimands", "Synthetic-data bias", "Naïve pooling", "AI-augmented estimation", "Equivalent human sample value"],
       make: "A bias decomposition, reconstructed error curves, a data-value calculation, and a decision-aware measurement extension.",
-      result: "The public package recovers the reported 24.9%–79.8% human-data-saving range; AAE beats naïve pooling in all eight matched cells.",
+      result: "The public package recovers the reported 24.9%–79.8% human-data-saving range and shows why naïve synthetic substitution fails.",
       verdict: "Largely verified"
     },
     {
       key: "generative", number: 3, name: "LLMs & Agents", color: "#7553a3",
       question: "Can an LLM or agentic workflow become a reproducible and valid component of business research?",
       business: "Evaluation of strategic business models",
-      paper: "Doshi, Bell, Mirzayev & Vanneste (2025)", title: "Generative AI and Evaluating Strategic Decisions", journal: "Strategic Management Journal",
-      data: "Two 60-business-model studies · 73,853 reported AI evaluations",
+      paper: "Doshi, Bell, Mirzayev & Vanneste (2025)", title: "Generative Artificial Intelligence and Evaluating Strategic Decisions", journal: "Strategic Management Journal",
+      data: "Two 60-business-model studies · 28 reconstruction targets",
       methods: ["LLM systems as treatments", "Retrieval and tools", "Agent routing and stopping", "Evaluator validity", "Model and policy drift"],
       make: "A complete AI-system manifest, evaluator audit, aggregation analysis, evidence-boundary verdict, and robust future study.",
-      result: "The published-table audit registers 28 targets and finds scaling gains larger than diversity gains in all eight matched comparisons. Raw-response reconstruction awaits the public archive.",
+      result: "The published-table audit registers 28 targets and reconstructs the diversity-versus-scaling arithmetic, exposing the boundary between a published-table audit and raw-response reproduction.",
       verdict: "Published-table audit · raw package pending"
     },
     {
@@ -41,7 +41,7 @@ window.STUDENT_COURSE = {
       data: "3,000,888 Favorita rows · 33 product families",
       methods: ["Edge construction", "Signed directed graphs", "Centrality", "Communities", "Graph neural networks", "Topology sensitivity"],
       make: "An edge contract, a graphed and analyzed retail network, forecast comparisons, a topology multiverse, and a scoped extension.",
-      result: "The public-data graph has 161 directed signed edges and three communities. Own-history ridge beats both graph-aware implementations—an important boundary, not a result to hide.",
+      result: "The public-data graph has 161 directed signed edges. Own-history and graph-aware forecasts are compared side by side, and the verdict is scoped to what the public data supports.",
       verdict: "Scoped public-data reconstruction"
     }
   ],
@@ -58,7 +58,7 @@ window.STUDENT_COURSE = {
     {n:10,cycle:"networks",type:"learn",title:"How relationships become analyzable networks",inside:"Define entities as nodes and relationships as edges. Calculate how information moves across connected entities, identify influential nodes and communities, compare with suitable benchmark networks, and test construction choices.",before:"Bring one business relationship from your discipline, state the event that creates it, and explain what information should travel across it.",after:"A precise definition of nodes and edges, a Graph Neural Network calculation completed by hand, a validity plan, and reconstruction targets."},
     {n:11,cycle:"networks",type:"execute",title:"Reconstruct a retail product network",inside:"Use public grocery-sales records to connect product families. Compare forecasts using only a product’s own sales history with forecasts using product relationships, then inspect communities, influential products, and alternative network definitions.",before:"Predict whether product relationships should improve the forecast beyond sales history alone and state the comparison needed to test that prediction.",after:"A 161-relationship network, forecast comparison, sensitivity analysis, evidence-bounded conclusion, and possible extensions."},
     {n:12,cycle:"networks",type:"defend",title:"Network and Graph Neural Network research workshop",inside:"Defend the nodes and edges in a published study, reproduce its focal result, test alternative network definitions, compare with non-network methods, and propose a business-research extension.",before:"Submit a near-independent reconstruction, several defensible network constructions, a methods section, and the proposed study.",after:"An editorial decision and a mature relational research design."},
-    {n:13,cycle:"capstone",type:"capstone",title:"Research Proposal Defense",inside:"Defend your original study’s business problem, theory, public data, constructs, analytical method, feasibility evidence, validity safeguards, and expected contribution.",before:"Submit the Research Proposal and prepare a concise, evidence-based defense of its major design choices.",after:"An editorial decision, a specific revision plan, and an archival plan for the proposed research."}
+    {n:13,cycle:"capstone",type:"capstone",title:"Individual capstone proposal conference",inside:"Defend your original study’s business problem, theory, public data, constructs, analytical method, feasibility evidence, validity safeguards, and expected contribution.",before:"Submit the final written research proposal and prepare a concise, evidence-based defense of its major design choices.",after:"An editorial decision, a specific revision plan, and an archival plan for the proposed research."}
   ],
   assessments: [
     {label:"Cycle 1 · Representation research dossier",weight:15,color:"#b72d49",detail:"Reconstruct how a published paper turns text into a business measure. Define the corpus and unit, reproduce the representation, recover the focal result, test whether the concepts are meaningful and stable, and propose an improved representation with a methods section.",strong:"Strong work separates code execution from construct validity and limits the substantive claim to what the representation evidence supports."},
@@ -66,8 +66,8 @@ window.STUDENT_COURSE = {
     {label:"Cycle 3 · LLMs & Agents research dossier",weight:15,color:"#7553a3",detail:"Reconstruct a published large language model or agent study as a complete system. Record the model, prompts, evidence, tools, agent rules, evaluator, outputs, and logs; recover the focal result; test sensitivity to system changes; and specify the extension.",strong:"Strong work makes the system repeatable, separates evaluator agreement from truth, and identifies which conclusion survives model or policy changes."},
     {label:"Cycle 4 · Networks research dossier",weight:15,color:"#187971",detail:"Reconstruct a published network or Graph Neural Network study. Define the nodes, relationships, direction, and time; rebuild the graph and focal analysis; compare with non-network methods; test communities, influential nodes, and alternative graph definitions; and specify the extension.",strong:"Strong work defends how the network was built and shows whether the business conclusion survives credible alternative constructions."},
     {label:"Research workshop contributions",weight:16,color:"#61707d",detail:"Complete four assessed workshop roles at 4% each in Classes 3, 6, 9, and 12. Depending on the class, serve as author, computational auditor, theory discussant, methods reviewer, or editor and prepare evidence before the discussion.",strong:"Strong work uses specific evidence to improve a peer’s claim and produces clear revision guidance. Speaking frequently, by itself, earns no credit."},
-    {label:"Research Proposal",weight:20,color:"#c89546",detail:"Develop one original business study from your strongest cycle extension. State the problem, theory gap, question or hypotheses, and contribution; identify public data, sample, and constructs; specify the method and analysis; and address feasibility, validity, ethics, managerial value, and reproducibility.",strong:"Strong work aligns the theory, data, method, evidence, and claim and shows that the proposed study is important, feasible, and auditable before full execution."},
-    {label:"Research Proposal Defense",weight:4,color:"#2e2529",detail:"In Class 13, present the proposal as a research argument. Explain how the reconstructed paper motivates the study and defend the theory, constructs, public data, method, feasibility evidence, validity safeguards, and expected contribution. Submit a short revision plan after the discussion.",strong:"Strong work answers questions with evidence, acknowledges unresolved limits, and converts criticism into specific improvements to the research design."}
+    {label:"Final written research proposal",weight:20,color:"#c89546",detail:"Develop one original business study from your strongest cycle extension. State the problem, theory gap, question or hypotheses, and contribution; identify public data, sample, and constructs; specify the method and analysis; and address feasibility, validity, ethics, managerial value, and reproducibility.",strong:"Strong work aligns the theory, data, method, evidence, and claim and shows that the proposed study is important, feasible, and auditable before full execution."},
+    {label:"Final proposal presentation and oral defense",weight:4,color:"#2e2529",detail:"In Class 13, present the proposal as a research argument. Explain how the reconstructed paper motivates the study and defend the theory, constructs, public data, method, feasibility evidence, validity safeguards, and expected contribution. Submit a short revision plan after the discussion.",strong:"Strong work answers questions with evidence, acknowledges unresolved limits, and converts criticism into specific improvements to the research design."}
   ],
   checklist: [
     "I can run Python and open a Jupyter notebook.",
@@ -86,6 +86,8 @@ window.STUDENT_COURSE = {
     ["May I choose any paper for the student workshop?","No. Workshop papers come from a faculty-curated, cross-disciplinary reading pool whose public evidence path has been screened. This protects the quality and feasibility of the exercise."],
     ["What if my reconstruction does not match the paper?","A mismatch can be excellent research work when targets were registered, the pipeline is traceable, and the discrepancy is diagnosed. Concealing it, changing the target after seeing results, or overstating execution is unacceptable."],
     ["Can I use generative AI in my coursework?","Yes, when the assignment permits it and use is transparent. Record provider/model, date or version, prompts, relevant outputs, verification, and your substantive decisions. You remain responsible for correctness, citations, confidentiality, and originality."],
+    ["Can I attend remotely?","No. This is an in-class doctoral research seminar, and students’ remote attendance is not permitted unless formally authorized. A laptop capable of running Python, Jupyter, and Git is required in every class."],
+    ["Will I have to pay for model API access?","No. A precomputed path is supplied for any exercise that would otherwise require paid API access."],
     ["Is there a final exam?","No conventional exam. The course culminates in an individual research proposal and oral defense grounded in the evidence skills developed across all four cycles."],
     ["Where will dates and submission details appear?","The <a href=\"downloads/BUSI-6306-Course-Outline.pdf\" target=\"_blank\" rel=\"noopener\">official course outline (PDF) ↗</a> explains the course sequence, requirements, grading, and policies. Current meeting dates, times, rooms, University-scheduled breaks, and submission deadlines are published in Banner and Brightspace."]
   ]

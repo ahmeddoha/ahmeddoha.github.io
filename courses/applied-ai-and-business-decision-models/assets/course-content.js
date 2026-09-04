@@ -21,7 +21,7 @@
 
   const classes = [
     {
-      id:1, cycle:0, cycleName:"Course foundations", kicker:"Enter through the marketplace", title:"From local evidence to managerial decisions", subtitle:"Meet the data before meeting the models.",
+      id:1, cycle:0, cycleName:"Course foundations", kicker:"Enter through the marketplace", title:"The Yelp Philadelphia marketplace, business decisions, and the four-cycle evidence chain", subtitle:"Meet the data before meeting the models.",
       essential:"What can a manager learn from 72,785 reviews—and what remains unknowable without other evidence?",
       bridge:"This class creates the empirical problem that makes all four AI cycles necessary.",
       outcomes:["Read the two-table Yelp cut at record, variable, and population levels.","Distinguish an observation from a construct and a platform trace from a business fact.","Formulate managerial decisions before selecting an analytical method.","Explain the four-cycle evidence chain used throughout the course."],
