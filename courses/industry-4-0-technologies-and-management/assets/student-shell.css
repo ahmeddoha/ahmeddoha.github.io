@@ -1,0 +1,248 @@
+/*
+ * Canonical shell geometry for the bespoke BUSI student-course sites.
+ *
+ * Course content may change, but these slots do not: header, hero columns,
+ * title/promise/lead rows, actions, proof card, journey strip, section gutters,
+ * and responsive breakpoints. Keep deployed copies byte-identical to this file.
+ */
+:root {
+  --student-header-height: 76px;
+  --student-page-gutter: clamp(24px, 7vw, 116px);
+  --student-hero-height: 700px;
+  --student-hero-gap: 80px;
+  --student-proof-width: 370px;
+  --student-proof-height: 380px;
+  --student-section-block-padding: 95px;
+}
+
+.site-header {
+  height: var(--student-header-height);
+  min-height: var(--student-header-height);
+  gap: 28px;
+  padding: 0 clamp(20px, 5vw, 78px);
+}
+
+.site-header nav { gap: 6px; }
+.site-header nav a { padding: 8px 10px; }
+
+.hero {
+  height: var(--student-hero-height);
+  min-height: var(--student-hero-height);
+  padding: 100px var(--student-page-gutter) 85px;
+  grid-template-columns: minmax(0, 1.25fr) minmax(330px, .75fr);
+  gap: var(--student-hero-gap);
+}
+
+.hero-copy { min-width: 0; }
+
+.hero .eyebrow { min-height: 2lh; }
+
+.hero .course-title {
+  max-width: 900px;
+  min-height: 2lh;
+  font-size: clamp(28px, 4.1vw, 60px);
+  line-height: .96;
+  letter-spacing: -2.5px;
+}
+
+.hero .hero-promise {
+  max-width: 720px;
+  min-height: 3lh;
+  margin: 24px 0 0;
+  font: 600 clamp(25px, 2.5vw, 35px)/1.15 Georgia, serif;
+}
+
+.hero .hero-lead {
+  max-width: 750px;
+  min-height: 3lh;
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+.hero-actions {
+  min-height: 53px;
+  align-items: flex-start;
+}
+
+.hero .hero-proof {
+  width: min(var(--student-proof-width), 100%);
+  height: var(--student-proof-height);
+  min-height: var(--student-proof-height);
+  padding: 34px;
+  overflow: hidden;
+}
+
+.promise-strip {
+  min-height: 115px;
+  display: grid;
+  align-items: center;
+}
+
+.section {
+  padding: var(--student-section-block-padding) var(--student-page-gutter);
+}
+
+.section-head {
+  gap: 60px;
+  margin-bottom: 45px;
+}
+
+.section-head h2 {
+  font-size: clamp(37px, 4.4vw, 61px);
+  line-height: 1.06;
+  max-width: 850px;
+}
+
+.section-head > p { max-width: 470px; }
+
+.rhythm article,
+.cycle-panel,
+.assessment-detail,
+.start-layout aside,
+.faq article { box-sizing: border-box; }
+
+.faq { min-height: 672px; }
+
+@media (min-width: 1051px) {
+  .assessment-layout { min-height: 354px; }
+  .start-layout { min-height: 459px; }
+}
+
+@media (min-width: 1251px) {
+  .assessment-section .section-head { min-height: 224px; }
+}
+
+/* Shared shells reserve the larger course's content slot at each breakpoint. */
+@media (min-width: 1501px) {
+  .journey .section-head { min-height: 159px; }
+  .journey .rhythm article { height: 257px; }
+  .cycle-panel { min-height: 597px; }
+}
+
+@media (min-width: 1251px) and (max-width: 1500px) {
+  .journey .section-head { min-height: 224px; }
+  .journey .rhythm article { height: 275px; }
+  .cycle-panel { min-height: 705px; }
+}
+
+@media (min-width: 1051px) and (max-width: 1250px) {
+  .journey .section-head { min-height: 215px; }
+  .journey .rhythm article { height: 324px; }
+  .cycle-panel { min-height: 788px; }
+  .assessment-section .section-head { min-height: 253px; }
+}
+
+@media (min-width: 1001px) and (max-width: 1050px) {
+  .journey .section-head { min-height: 215px; }
+  .journey .rhythm article { height: 324px; }
+  .cycle-panel { min-height: 705px; }
+  .assessment-section .section-head { min-height: 240px; }
+}
+
+@media (min-width: 701px) and (max-width: 1250px) {
+  :root {
+    --student-page-gutter: clamp(24px, 5vw, 64px);
+    --student-hero-gap: clamp(24px, 4vw, 48px);
+    --student-proof-width: 310px;
+    --student-proof-height: 362px;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(250px, .7fr);
+  }
+
+  .hero .course-title { font-size: clamp(27px, 3.5vw, 44px); }
+  .hero .hero-promise {
+    max-width: 520px;
+    font-size: clamp(22px, 2.5vw, 30px);
+  }
+  .hero .hero-lead { max-width: 560px; font-size: 17px; }
+  .hero .hero-proof { justify-self: end; padding: 25px; }
+}
+
+@media (max-width: 1050px) {
+  .site-header nav { display: none; }
+  .section-head { display: block; }
+  .assessment-layout { min-height: 1024px; }
+  .start-layout { min-height: 760px; }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .journey .section-head { min-height: 198px; }
+  .journey .rhythm article { height: 232px; }
+  .cycle-panel { min-height: 879px; }
+  .assessment-section .section-head { min-height: 223px; }
+}
+
+@media (max-width: 800px) {
+  .hero .hero-lead { min-height: 5lh; }
+  .promise-strip { min-height: 146px; }
+  .faq { min-height: 681px; }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --student-page-gutter: 18px;
+    --student-hero-height: auto;
+    --student-proof-width: 340px;
+    --student-proof-height: 400px;
+    --student-section-block-padding: 70px;
+  }
+
+  .site-header { padding: 0 15px; }
+  .hero {
+    height: auto;
+    min-height: 0;
+    padding: 70px 20px;
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .hero-copy { width: 100%; }
+  .hero .course-title {
+    font-size: clamp(21px, 7vw, 28px);
+    letter-spacing: -1.2px;
+  }
+  .hero .hero-promise {
+    max-width: 720px;
+    min-height: 3lh;
+    font-size: 25px;
+  }
+  .hero .hero-lead {
+    max-width: 750px;
+    min-height: 5lh;
+    font-size: 17px;
+  }
+  .hero .hero-proof {
+    justify-self: start;
+    padding: 34px;
+  }
+  .promise-strip {
+    min-height: clamp(146px, calc(379px - 44.3vw), 237px);
+  }
+  .journey .section-head {
+    min-height: clamp(268px, calc(597px - 84.3vw), 327px);
+  }
+  .cycles-section .section-head {
+    min-height: clamp(219px, calc(587px - 94.3vw), 285px);
+  }
+  .journey .rhythm article {
+    height: clamp(299px, calc(438px - 35.7vw), 324px);
+  }
+  .cycle-panel {
+    min-height: clamp(879px, calc(3359px - 498.6vw), 1764px);
+  }
+  .assessment-layout { min-height: 1040px; }
+  .assessment-section .section-head {
+    min-height: clamp(334px, calc(702px - 94.3vw), 400px);
+  }
+  .start-layout { min-height: 1020px; }
+  .start-section .section-head {
+    min-height: clamp(268px, calc(407px - 35.7vw), 293px);
+  }
+  .faq { min-height: 783px; }
+  .section-head h2 { font-size: 39px; }
+}
+
+@media (max-width: 350px) {
+  .hero .hero-lead { min-height: 6lh; }
+}
