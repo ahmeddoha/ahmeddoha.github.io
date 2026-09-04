@@ -1,0 +1,71 @@
+/* Responsive corrections, loaded after the site's own stylesheets.
+ *
+ * Two defects this fixes on narrow screens:
+ *  1. The hero title's parts are `white-space: nowrap`, so a long word could
+ *     never wrap — it ran past the screen edge and was clipped, and because the
+ *     text cannot reflow, zooming out was the only escape.
+ *  2. Multi-column grids (.independence, .rhythm, .class-grid …) kept their
+ *     columns below ~360px, pushing content past the viewport. A page wider
+ *     than the screen is what makes pinch-zoom feel stuck.
+ *
+ * Nothing here changes type scale; the sites' own clamp() rules still set size.
+ */
+@media (max-width: 760px) {
+  .hero .course-title > span,
+  .hero .course-title em,
+  .hero h1 > span,
+  .hero h1 em {
+    white-space: normal;
+  }
+
+  .hero .course-title,
+  .hero h1 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .independence,
+  .rhythm,
+  .class-grid,
+  .cycle-interface,
+  .cycle-panel,
+  .assessment-layout,
+  .start-layout,
+  .evidence-section,
+  .class-details,
+  .cycle-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .independence i,
+  .rhythm > i {
+    display: none;
+  }
+
+  .class-details section {
+    border-right: 0;
+    border-bottom: 1px solid var(--line, #e5e7eb);
+  }
+}
+
+/* A phone must never scroll sideways: it hides content and defeats zoom. */
+@media (max-width: 760px) {
+  img,
+  table,
+  pre,
+  iframe {
+    max-width: 100%;
+  }
+}
+
+/* Below ~380px the class-card row's fixed 54px/30px columns plus padding push
+   past the edge. Tighten them rather than let the page scroll sideways. */
+@media (max-width: 380px) {
+  .class-card > button {
+    grid-template-columns: 38px 1fr 18px;
+    gap: 10px;
+    padding: 16px 12px;
+  }
+}
