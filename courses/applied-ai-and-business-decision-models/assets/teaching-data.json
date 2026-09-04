@@ -240946,7 +240946,6 @@
     }
   },
   "cycle3": {
-    "generation_provider": "anthropic",
     "questions": [
       {
         "question": "Where's good for a quiet dinner to take a client?",
