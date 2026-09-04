@@ -30,8 +30,8 @@
         key: "value", number: 3, name: "Special Topics in Management of Innovation", color: "#4f5964",
         question: "How can an innovation create value for customers and still let the innovator capture enough of it?",
         business: "Design services, platforms, and complementary assets that turn technological capability into durable performance.",
-        cases: ["Innovation at Progressive (A): Pay-As-You-Go Insurance", "TopCoder (A): Developing Software through Crowdsourcing"],
-        relatedSessions: ["Term Paper Clinic", "Integrative Application: Profiting From Technology · AI Wars in 2025"],
+        cases: ["Innovation at Progressive (A): Pay-As-You-Go Insurance", "TopCoder (A): Developing Software through Crowdsourcing", "AI Wars in 2025"],
+        relatedSessions: ["Term Paper Clinic"],
         focus: "Service innovation · business-model design · appropriability · complementary assets",
         evidence: "Adoption barriers, participant incentives, revenue logic, platform governance, contribution per query, and sensitivity analysis.",
         methods: ["Business Model Innovation", "Profiting from Technology", "Appropriability", "Service Innovation", "Complementary Assets"],
@@ -47,7 +47,7 @@
       {key:"strategy", label:"Module 2", name:"Strategic Management of Technological Innovation", range:"Classes 6–7", color:"#b8272f"},
       {key:"value", label:"Module 3", name:"Special Topics in Management of Innovation", range:"Classes 8–9", color:"#4f5964"},
       {key:"clinic", label:"Project Studio", name:"Term Paper Clinic", range:"Class 10", color:"#6c747d"},
-      {key:"synthesis", label:"Integrative Application", name:"Profiting From Technology", range:"Class 11", color:"#4f5964"},
+      {key:"synthesis", label:"Module 3 · continued", name:"Profiting From Technology", range:"Class 11", color:"#4f5964"},
       {key:"final", label:"Final Studio", name:"Platform recommendations", range:"Classes 12–13", color:"#191919"}
     ],
     classes: [
